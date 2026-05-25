@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.18.4 - 2026-05-26]
+
+#### Fixed
+- Conditional types with parameter subject resolving to incorrect type.
+
 ## [1.18.3 - 2026-05-17]
 
 #### Fixed
