@@ -1,5 +1,18 @@
 # Change Log
 
+## [1.18.5 - 2026-06-21]
+
+#### Fixed
+- Memory leak due to old syntax tree fragments accumulating while editing.
+- Intermittent stale diagnostics showing, sometimes referencing bad ranges.
+- Template type resolving failing inside a method when the method and class both declare a template type.
+- Parameter references not recognised correctly in short anonymous functions.
+- By-ref anonymous use variables showing as `null` even though they have been declared in prior conditional branches.
+- False method compatibility error when class inherits implementation from a base class but gets abstract declaration from a trait.
+- False property compatibility error when interface only declares a get hook and the implementing class defines a more restrictive set visibility.
+- TypeError: Cannot read properties of undefined (reading 'toLowerCase') intelephense.js:2:3170612
+- Named argument variable highlight bug.
+
 ## [1.18.4 - 2026-05-26]
 
 #### Fixed
